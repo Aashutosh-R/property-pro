@@ -7,7 +7,7 @@ const NavLink: React.FC<{ item: NavLinks }> = ({ item }) => {
   const path = usePathname()
 
   const linkclasses = clsx(
-    'py-3 text-5xl font-medium text-white/40 rounded-full hover:text-primary',
+    'py-3 text-3xl sm:text-5xl font-medium text-white/40 rounded-full hover:text-primary',
     {
       '!text-primary': item.href === path,
       'text-primary': path.startsWith(

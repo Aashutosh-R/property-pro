@@ -119,18 +119,18 @@ const Header: React.FC = () => {
             ))}
           </ul>
         </nav>
-        <div className='flex flex-col gap-1 my-16'>
-          <p className='text-xm font-normal text-white/40'>Contact</p>
-          <p className='text-xm font-medium text-white'>
+        <div className='flex flex-col gap-1 my-16 text-white'>
+          <p className='text-base sm:text-xm font-normal text-white/40'>Contact</p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>
             hello@propertypro.com
           </p>
-          <p className='text-xm font-medium text-white'>+1-212-456-7890 </p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>+1-212-456-7890 </p>
         </div>
-        <div className='flex flex-col gap-1 my-16'>
-          <p className='text-xm font-normal text-white/40'>Socials</p>
-          <p className='text-xm font-medium text-white'>X / Twitter</p>
-          <p className='text-xm font-medium text-white'>Facebook</p>
-          <p className='text-xm font-medium text-white'>Instagram</p>
+        <div className='flex flex-col gap-1 my-16 text-white'>
+          <p className='text-base sm:text-xm font-normal text-white/40'>Socials</p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>X / Twitter</p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>Facebook</p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>Instagram</p>
         </div>
       </div>
     </header>

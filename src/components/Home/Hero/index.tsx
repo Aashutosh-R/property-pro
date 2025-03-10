@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
               priority={false}
             />
           </div>
-          <div className='md:absolute bottom-0 -right-68 bg-white py-12 px-8 mobile:px-16 md:pl-16 md:pr-[295px] rounded-2xl md:rounded-tl-2xl mt-24'>
+          <div className='md:absolute bottom-0 -right-68 bg-white py-12 px-8 mobile:px-16 md:pl-16 md:pr-[295px] rounded-2xl md:rounded-none md:rounded-tl-2xl mt-24'>
             <div className='grid grid-cols-2 sm:grid-cols-4 md:flex gap-16 md:gap-24 sm:text-center'>
               <div className='flex flex-col sm:items-center gap-3'>
                 <Image
