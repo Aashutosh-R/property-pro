@@ -2,14 +2,16 @@
 import { navLinks } from '@/app/api/navlink'
 import { Icon } from '@iconify/react'
 import clsx from 'clsx'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import NavLink from './Navigation/NavLink'
+import { useTheme } from 'next-themes'
+import Logo from './BrandLogo/Logo'
 
 const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false)
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   const sideMenuRef = useRef<HTMLDivElement>(null)
 
@@ -25,30 +27,27 @@ const Header: React.FC = () => {
   }, [])
 
   const headerclass = clsx('fixed top-0 w-full py-4 z-30', {
-    'bg-black/50 shadow-lg': sticky,
+    'bg-white/40 dark:bg-black/40 shadow-lg dark:shadow-lg dark:shadow-white/40 ': sticky,
   })
 
   return (
     <header className={headerclass}>
       <nav className={`container max-w-8xl mx-auto 2xl:px-0 px-5`}>
-        <div className='flex justify-between items-center gap-2'>
+        <div className='flex justify-between items-center gap-2 sha'>
           <div>
             <Link href='/'>
-              <Image
-                src={'/images/header/logo.svg'}
-                alt='logo'
-                width={192}
-                height={40}
-              />
+              <Logo />
             </Link>
           </div>
           <div className='flex items-center gap-2 sm:gap-6'>
-            <button className='bg-white rounded-full p-2'>
+            <button
+              className='bg-white dark:bg-badge rounded-full p-2 hover:cursor-pointer'
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
               <Icon
                 icon={'solar:sun-bold'}
                 width={24}
                 height={24}
-                className='block dark:hidden'
+                className='dark:hidden block'
               />
               <Icon
                 icon={'solar:moon-bold'}
@@ -59,7 +58,7 @@ const Header: React.FC = () => {
             </button>
             <div className='hidden md:block'>
               <Link href={'#'}>
-                <div className='text-white flex items-center gap-2 border-r'>
+                <div className='text-white dark:text-black flex items-center gap-2 border-r'>
                   <div>
                     <Icon icon={'ph:phone-bold'} width={24} height={24} />
                   </div>
@@ -72,7 +71,7 @@ const Header: React.FC = () => {
             <div>
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
-                className='flex items-center gap-3 p-2 sm:px-5 sm:py-3 bg-white rounded-full text-black font-semibold hover:cursor-pointer'
+                className='flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full bg-white dark:bg-badge text-black dark:text-white font-semibold hover:cursor-pointer'
                 aria-label='Toggle mobile menu'>
                 <span>
                   <Icon icon={'ph:list'} width={24} height={24} />
@@ -120,17 +119,29 @@ const Header: React.FC = () => {
           </ul>
         </nav>
         <div className='flex flex-col gap-1 my-16 text-white'>
-          <p className='text-base sm:text-xm font-normal text-white/40'>Contact</p>
+          <p className='text-base sm:text-xm font-normal text-white/40'>
+            Contact
+          </p>
           <p className='text-base sm:text-xm font-medium text-inherit'>
             hello@propertypro.com
           </p>
-          <p className='text-base sm:text-xm font-medium text-inherit'>+1-212-456-7890 </p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>
+            +1-212-456-7890{' '}
+          </p>
         </div>
         <div className='flex flex-col gap-1 my-16 text-white'>
-          <p className='text-base sm:text-xm font-normal text-white/40'>Socials</p>
-          <p className='text-base sm:text-xm font-medium text-inherit'>X / Twitter</p>
-          <p className='text-base sm:text-xm font-medium text-inherit'>Facebook</p>
-          <p className='text-base sm:text-xm font-medium text-inherit'>Instagram</p>
+          <p className='text-base sm:text-xm font-normal text-white/40'>
+            Socials
+          </p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>
+            X / Twitter
+          </p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>
+            Facebook
+          </p>
+          <p className='text-base sm:text-xm font-medium text-inherit'>
+            Instagram
+          </p>
         </div>
       </div>
     </header>

@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Gradient colors */
   --color-primary: #07be8a;

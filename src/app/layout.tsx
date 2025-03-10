@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Bricolage_Grotesque } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Layout/Header'
+import { ThemeProvider } from 'next-themes'
 
 const bricolageGro = Bricolage_Grotesque({
   variable: '--font-bricolage-gro',
@@ -22,8 +23,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${bricolageGro.variable} antialiased`}>
-        <Header />
-        {children}
+        <ThemeProvider
+          attribute='class'
+          enableSystem={true}
+          defaultTheme='light'>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
