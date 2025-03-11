@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   }, [])
 
   const headerclass = clsx('fixed top-0 w-full py-4 z-30', {
-    'bg-white/40 dark:bg-black/40 shadow-lg dark:shadow-lg dark:shadow-white/40 ': sticky,
+    'dark:bg-white/80 bg-black/80 shadow-lg dark:shadow-lg dark:shadow-white/40 ': sticky,
   })
 
   return (

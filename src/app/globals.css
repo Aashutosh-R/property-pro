@@ -14,10 +14,13 @@
   --text-9xl: 6.5rem;
 
   /* Breakpoint */
+  --breakpoint-xs: 23.438rem; /* 375px */
   --breakpoint-mobile: 32.5rem; /* 520px */
 
   /* breakpoint / max-w */
   --spacing-45p: 45%;
+  --spacing-85p: 85%;
+  --spacing-90p: 90%;
   --spacing-68: 17.375rem; /*278px*/
   --spacing-8xl: 87.5rem; /* 1400px */
 }

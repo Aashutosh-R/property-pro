@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${bricolageGro.variable} antialiased`}>
+      <body className={`${bricolageGro.variable} bg-white dark:bg-black antialiased`}>
         <ThemeProvider
           attribute='class'
           enableSystem={true}
