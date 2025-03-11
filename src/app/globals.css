@@ -12,6 +12,8 @@
   /* font size */
   --text-xm: 1.125rem;
   --text-9xl: 6.5rem;
+  --text-40: 2.5rem;
+  --text-52: 3.25rem;
 
   /* Breakpoint */
   --breakpoint-xs: 23.438rem; /* 375px */
@@ -23,6 +25,10 @@
   --spacing-90p: 90%;
   --spacing-68: 17.375rem; /*278px*/
   --spacing-8xl: 87.5rem; /* 1400px */
+}
+
+body {
+  font-family: var(--font-bricolage-gro);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

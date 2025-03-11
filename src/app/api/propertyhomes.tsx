@@ -1,0 +1,58 @@
+import { PropertyHomes } from '@/types/properyHomes'
+
+export const propertyHomes: PropertyHomes[] = [
+  {
+    src: '/images/properties/property1.jpg',
+    name: 'Serenity height villas',
+    location: '15 s aurora ave, miami',
+    rate: '570,000',
+    beds: 4,
+    baths: 3,
+    area: 120,
+  },
+  {
+    src: '/images/properties/property2.jpg',
+    name: 'Mountain retreat villa',
+    location: '18 s aurora ave, miami',
+    rate: '575,000',
+    beds: 5,
+    baths: 2,
+    area: 150,
+  },
+  {
+    src: '/images/properties/property3.jpg',
+    name: 'Modern luxe villa',
+    location: '20 s aurora ave, miami',
+    rate: '580,000',
+    beds: 3,
+    baths: 4,
+    area: 180,
+  },
+  {
+    src: '/images/properties/property4.jpg',
+    name: 'Royal orchid villas',
+    location: '12 emerald heights, los angeles',
+    rate: '590,000',
+    beds: 6,
+    baths: 3,
+    area: 200,
+  },
+  {
+    src: '/images/properties/property5.jpg',
+    name: 'Grand vista villas',
+    location: '25 skyline boulevard, san diego',
+    rate: '710,000',
+    beds: 2,
+    baths: 1,
+    area: 90,
+  },
+  {
+    src: '/images/properties/property6.jpg',
+    name: 'Imperial pearl villas',
+    location: '18 sapphire bay road, naples',
+    rate: '630,000',
+    beds: 4,
+    baths: 2,
+    area: 130,
+  },
+]
