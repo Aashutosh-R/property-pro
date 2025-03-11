@@ -77,7 +77,6 @@ const Services: React.FC = () => {
                   alt='img1'
                   width={680}
                   height={386}
-                  objectFit='cover'
                   className='rounded-2xl w-full'
                 />
                 <div className='hidden group-hover:block'>
