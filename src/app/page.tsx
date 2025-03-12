@@ -2,6 +2,7 @@ import FeaturedProperty from '@/components/Home/FeaturedProperty'
 import Hero from '@/components/Home/Hero'
 import Properties from '@/components/Home/Properties'
 import Services from '@/components/Home/Services'
+import Testimonials from '@/components/Home/Testimonials'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <Properties />
       <FeaturedProperty />
+      <Testimonials />
     </main>
   )
 }
