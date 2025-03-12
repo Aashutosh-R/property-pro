@@ -17,6 +17,10 @@ const FeaturedProperty: React.FC = () => {
         <div className='grid items-center gap-10 grid-cols-1 xl:grid-cols-2'>
           <div>
             <Carousel
+              opts={{
+                align: 'start',
+                loop: true,
+              }}
               plugins={[
                 Autoplay({
                   delay: 2000,
@@ -81,8 +85,12 @@ const FeaturedProperty: React.FC = () => {
                   Get in touch
                 </button>
                 <div>
-                  <h4 className='text-2xl sm:text-3xl font-medium text-black dark:text-white'>$1,650,500</h4>
-                  <p className='text-sm font-normal text-black/50 dark:text-white/50'>Discounted Price</p>
+                  <h4 className='text-2xl sm:text-3xl font-medium text-black dark:text-white'>
+                    $1,650,500
+                  </h4>
+                  <p className='text-sm font-normal text-black/50 dark:text-white/50'>
+                    Discounted Price
+                  </p>
                 </div>
               </div>
             </div>
