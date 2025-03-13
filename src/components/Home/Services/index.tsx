@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const Services: React.FC = () => {
   return (
-    <section className='py-28'>
-      <div className='relative container max-w-8xl mx-auto px-5 2xl:px-0 overflow-hidden xl:overflow-visible'>
+    <section className='py-28 overflow-hidden'>
+      <div className='relative container max-w-8xl mx-auto px-5 2xl:px-0'>
         <div className='absolute -left-96 -top-24'>
           <Image
             src={'/images/services/serviceSec-shape.png'}
