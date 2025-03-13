@@ -77,8 +77,8 @@ const Testimonials: React.FC = () => {
           ]}>
           <CarouselContent>
             <CarouselItem className='grid grid-cols-12 gap-10'>
-              <div className='col-span-8 content-center'>
-                <div className='flex gap-10'>
+              <div className='col-span-4 mobile:col-span-7 sm:col-span-9 md:col-span-12 xl:col-span-8 content-center'>
+                <div className='flex flex-col mobile:flex-row gap-5 mobile:gap-10'>
                   <div>
                     <Icon
                       icon={'fluent:home-empty-20-regular'}
@@ -88,33 +88,48 @@ const Testimonials: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h4 className='text-3xl font-medium text-white max-w-90p leading-12 mb-8'>
+                    <h4 className='text-xl mobile:text-2xl lg:text-3xl font-medium text-white max-w-90p leading-8 lg:leading-12 mb-8 '>
                       I found my ideal home in no time! the listings were
                       detailed, the photos were accurate, and the whole process
                       felt seamless. customer service was top-notch, answering
                       all my questions. i will definitely use this platform
                       again in the future!
                     </h4>
-                    <h6 className='text-xm font-medium text-white mb-1'>
-                      Emily & John Smith
-                    </h6>
-                    <p className='text-base font-normal text-white/40'>Buyer</p>
+                    <div className='flex gap-6 items-center'>
+                      <div className='block xl:hidden'>
+                        <Image
+                          src={'/images/testimonial/testimonial1.jpg'}
+                          alt='test1'
+                          width={62}
+                          height={62}
+                          className='w-full h-full rounded-full object-cover'
+                        />
+                      </div>
+                      <div>
+                        <h6 className='text-xm font-medium text-white mb-1'>
+                          Emily & John Smith
+                        </h6>
+                        <p className='text-base font-normal text-white/40'>
+                          Buyer
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className='col-span-4'>
+              <div className='hidden xl:block col-span-4'>
                 <Image
                   src={'/images/testimonial/testimonial1.jpg'}
                   alt='test1'
                   width={439}
                   height={434}
-                  className='w-full h-full rounded-2xl'
+                  className='w-full h-full rounded-2xl object-cover'
                 />
               </div>
             </CarouselItem>
             <CarouselItem className='grid grid-cols-12 gap-10'>
-              <div className='col-span-8 content-center'>
-                <div className='flex gap-10'>
+              <div className='col-span-4 mobile:col-span-7 sm:col-span-9 md:col-span-12 xl:col-span-8 content-center'>
+                <div className='flex flex-col mobile:flex-row gap-5 mobile:gap-10'>
                   <div>
                     <Icon
                       icon={'fluent:home-empty-20-regular'}
@@ -124,27 +139,42 @@ const Testimonials: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h4 className='text-3xl font-medium text-white max-w-90p leading-12 mb-8'>
+                    <h4 className='text-xl mobile:text-2xl lg:text-3xl font-medium text-white max-w-90p leading-8 lg:leading-12 mb-8 '>
                       I quickly found my dream home! The listings were thorough,
                       the photos were spot-on, and the entire process was
                       smooth. The customer service was outstanding, addressing
                       all my questions with ease. I’ll definitely use this
                       platform again!
                     </h4>
-                    <h6 className='text-xm font-medium text-white mb-1'>
-                      Sam & Mickay John
-                    </h6>
-                    <p className='text-base font-normal text-white/40'>Buyer</p>
+                    <div className='flex gap-6 items-center'>
+                      <div className='block xl:hidden'>
+                        <Image
+                          src={'/images/testimonial/testimonial2.jpg'}
+                          alt='test2'
+                          width={62}
+                          height={62}
+                          className='w-full h-full rounded-full object-cover'
+                        />
+                      </div>
+                      <div>
+                        <h6 className='text-xm font-medium text-white mb-1'>
+                          Emily & John Smith
+                        </h6>
+                        <p className='text-base font-normal text-white/40'>
+                          Buyer
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className='col-span-4'>
+              <div className='hidden xl:block col-span-4'>
                 <Image
                   src={'/images/testimonial/testimonial2.jpg'}
                   alt='test2'
                   width={439}
                   height={434}
-                  className='w-full h-full rounded-2xl'
+                  className='w-full h-full rounded-2xl object-cover'
                 />
               </div>
             </CarouselItem>
