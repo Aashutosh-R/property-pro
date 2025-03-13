@@ -7,7 +7,7 @@ const Properties: React.FC = () => {
     <section className='py-28'>
       <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
         <div className='mb-16'>
-          <div className='flex gap-2.5 items-center justify-center'>
+          <div className='flex gap-2.5 items-center justify-center mb-4'>
             <span>
               <Icon
                 icon={'ph:house-simple-fill'}
