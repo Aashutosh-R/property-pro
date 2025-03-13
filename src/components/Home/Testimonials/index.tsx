@@ -12,8 +12,16 @@ import Autoplay from 'embla-carousel-autoplay'
 
 const Testimonials: React.FC = () => {
   return (
-    <section className='pt-28 pb-20 bg-badge'>
-      <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
+    <section className='pt-28 pb-20 bg-badge overflow-hidden'>
+      <div className='relative container max-w-8xl mx-auto px-5 2xl:px-0'>
+      <div className='absolute -top-20 -right-1/4'>
+          <Image
+            src={'/images/testimonial/home-shape.png'}
+            alt='homeShape'
+            width={998}
+            height={990}
+          />
+        </div>
         <div className='mb-9'>
           <div className='flex gap-2.5 items-center'>
             <span>
