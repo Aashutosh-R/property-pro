@@ -33,7 +33,7 @@ const PromoVideo: React.FC = () => {
             </div>
           </div>
           <div className='absolute bottom-0 w-full'>
-            <div className='bg-primary mobile:py-2.5 md:py-5 rounded-b-2xl'>
+            <div className='bg-primary mobile:py-2.5 md:py-5 rounded-b-2xl overflow-hidden'>
               <Slider
                 width='1050px'
                 duration={80}
