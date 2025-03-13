@@ -1,3 +1,4 @@
+import Blog from '@/components/Home/Blog'
 import FeaturedProperty from '@/components/Home/FeaturedProperty'
 import Hero from '@/components/Home/Hero'
 import Properties from '@/components/Home/Properties'
@@ -12,6 +13,7 @@ export default function Home() {
       <Properties />
       <FeaturedProperty />
       <Testimonials />
+      <Blog />
     </main>
   )
 }
