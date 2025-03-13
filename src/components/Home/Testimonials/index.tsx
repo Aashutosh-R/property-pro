@@ -34,7 +34,7 @@ const Testimonials: React.FC = () => {
             </span>
             <p className='text-base font-semibold text-white'>Testimonials</p>
           </div>
-          <h2 className='text-52 font-medium text-white'>
+          <h2 className='text-40 sm:text-52 font-medium text-white'>
             What our clients says
           </h2>
         </div>
