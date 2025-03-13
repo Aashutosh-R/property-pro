@@ -1,9 +1,10 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import Image from 'next/image'
 
 const Hero: React.FC = () => {
   return (
     <section>
-      <div className='bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white dark:to-black/10 overflow-hidden'>
+      <div className='bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white dark:to-badge/10 overflow-hidden'>
         <div className='relative container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68'>
           <div className='relative text-white dark:text-badge text-center md:text-start z-10'>
             <p className='text-inherit text-xm font-medium'>Palm springs, CA</p>
@@ -31,57 +32,22 @@ const Hero: React.FC = () => {
           <div className='md:absolute bottom-0 -right-68 bg-white dark:bg-badge py-12 px-8 mobile:px-16 md:pl-16 md:pr-[295px] rounded-2xl md:rounded-none md:rounded-tl-2xl mt-24'>
             <div className='grid grid-cols-2 sm:grid-cols-4 md:flex gap-16 md:gap-24 sm:text-center dark:text-white text-black'>
               <div className='flex flex-col sm:items-center gap-3'>
-                <Image
-                  src={'/images/hero/sofa.svg'}
-                  alt='sofa'
-                  width={32}
-                  height={32}
-                  className='block dark:hidden'
-                />
-                <Image
-                  src={'/images/hero/dark-sofa.svg'}
-                  alt='sofa'
-                  width={32}
-                  height={32}
-                  className='hidden dark:block'
-                />
+                <Icon icon={'solar:bed-linear'} width={32} height={32} />
                 <p className='text-sm sm:text-base font-normal text-inherit'>
                   4 Bedrooms
                 </p>
               </div>
               <div className='flex flex-col sm:items-center gap-3'>
-                <Image
-                  src={'/images/hero/tube.svg'}
-                  alt='sofa'
-                  width={32}
-                  height={32}
-                  className='block dark:hidden'
-                />
-                <Image
-                  src={'/images/hero/dark-tube.svg'}
-                  alt='sofa'
-                  width={32}
-                  height={32}
-                  className='hidden dark:block'
-                />
+                <Icon icon={'solar:bath-linear'} width={32} height={32} />
                 <p className='text-sm sm:text-base font-normal text-inherit'>
                   4 Restroom
                 </p>
               </div>
               <div className='flex flex-col sm:items-center gap-3'>
-                <Image
-                  src={'/images/hero/parking.svg'}
-                  alt='sofa'
+                <Icon
+                  icon={'hugeicons:car-parking-02'}
                   width={32}
                   height={32}
-                  className='block dark:hidden'
-                />
-                <Image
-                  src={'/images/hero/dark-parking.svg'}
-                  alt='sofa'
-                  width={32}
-                  height={32}
-                  className='hidden dark:block'
                 />
                 <p className='text-sm sm:text-base font-normal text-inherit'>
                   Parking space
