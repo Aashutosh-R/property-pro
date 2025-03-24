@@ -3,6 +3,7 @@ import { Bricolage_Grotesque } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Layout/Header'
 import { ThemeProvider } from 'next-themes'
+import Footer from '@/components/Layout/Footer'
 
 const bricolageGro = Bricolage_Grotesque({
   variable: '--font-bricolage-gro',
@@ -22,13 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${bricolageGro.variable} bg-white dark:bg-badge antialiased`}>
+      <body
+        className={`${bricolageGro.variable} bg-white dark:bg-badge antialiased`}>
         <ThemeProvider
           attribute='class'
           enableSystem={true}
           defaultTheme='light'>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
