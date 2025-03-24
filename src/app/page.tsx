@@ -1,4 +1,5 @@
 import Blog from '@/components/Home/Blog'
+import Faq from '@/components/Home/FAQ'
 import FeaturedProperty from '@/components/Home/FeaturedProperty'
 import Hero from '@/components/Home/Hero'
 import PromoVideo from '@/components/Home/PromoVideo'
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials />
       <Blog />
       <PromoVideo />
+      <Faq />
     </main>
   )
 }
