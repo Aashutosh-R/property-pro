@@ -15,7 +15,7 @@ const PromoVideo: React.FC = () => {
             autoPlay
             muted
             playsInline>
-            <source src='/video/promovideo/promoAd.mp4' type='video/mp4' />
+            <source src='https://videos.pexels.com/video-files/7233782/7233782-hd_1920_1080_25fps.mp4' type='video/mp4' />
           </video>
           <div className='absolute top-1/3 z-20'>
             <div>
