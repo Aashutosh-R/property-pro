@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className='py-6 border-t border-white/10'>
-          <div className='flex flex-col gap-10 justify-between items-center'>
+          <div className='flex flex-col mobile:flex-row gap-5 justify-between items-center'>
             <div>
               <p className='text-sm font-normal text-white/40'>
                 ©2025 PropertyPro
