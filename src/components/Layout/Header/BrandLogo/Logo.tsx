@@ -8,14 +8,14 @@ const Logo: React.FC = () => {
         alt='logo'
         width={192}
         height={40}
-        className='block dark:hidden'
+        className='hidden dark:block'
       />
       <Image
         src={'/images/header/dark-logo.svg'}
         alt='logo'
         width={192}
         height={40}
-        className='hidden dark:block'
+        className='block dark:hidden'
       />
     </>
   )

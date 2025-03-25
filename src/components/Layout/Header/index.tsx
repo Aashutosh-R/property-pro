@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   }, [])
 
   const headerclass = clsx('fixed top-0 w-full py-4 z-30', {
-    'dark:bg-white/80 bg-black/80 shadow-lg dark:shadow-lg dark:shadow-white/40 ': sticky,
+    'dark:bg-badge bg-white shadow-lg dark:shadow-lg dark:shadow-white/20 ': sticky,
   })
 
   return (
@@ -41,24 +41,24 @@ const Header: React.FC = () => {
           </div>
           <div className='flex items-center gap-2 sm:gap-6'>
             <button
-              className='bg-white dark:bg-badge rounded-full p-2 hover:cursor-pointer'
+              className='bg-badge dark:bg-white rounded-full p-2 hover:cursor-pointer'
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
               <Icon
                 icon={'solar:sun-bold'}
                 width={24}
                 height={24}
-                className='dark:hidden block'
+                className='dark:hidden block text-white'
               />
               <Icon
                 icon={'solar:moon-bold'}
                 width={24}
                 height={24}
-                className='dark:block hidden'
+                className='dark:block hidden text-badge'
               />
             </button>
             <div className='hidden md:block'>
               <Link href={'#'}>
-                <div className='text-white dark:text-black flex items-center gap-2 border-r'>
+                <div className='text-badge dark:text-white flex items-center gap-2 border-r'>
                   <div>
                     <Icon icon={'ph:phone-bold'} width={24} height={24} />
                   </div>
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
             <div>
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
-                className='flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full bg-white dark:bg-badge text-black dark:text-white font-semibold hover:cursor-pointer'
+                className='flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full bg-badge dark:bg-white text-white dark:text-black font-semibold hover:cursor-pointer'
                 aria-label='Toggle mobile menu'>
                 <span>
                   <Icon icon={'ph:list'} width={24} height={24} />
