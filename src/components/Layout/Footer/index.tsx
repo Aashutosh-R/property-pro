@@ -19,6 +19,8 @@ const Footer: React.FC = () => {
                 <form className='mb-5 mobile:mb-0'>
                   <input
                     type='email'
+                    name='email'
+                    autoComplete='email'
                     placeholder='Enter your email'
                     className='placeholder:text-white text-white bg-white/20 rounded-full px-6 py-4'
                   />
