@@ -28,7 +28,7 @@ const Properties: React.FC = () => {
           </p>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
-          {propertyHomes.map((item, index) => (
+          {propertyHomes.slice(0,6).map((item, index) => (
             <div key={index} className=''>
               <PropertyCard item={item} />
             </div>
