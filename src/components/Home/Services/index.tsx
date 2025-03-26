@@ -38,9 +38,11 @@ const Services: React.FC = () => {
                 Discover a diverse range of premium properties, from luxurious
                 apartments to spacious villas, tailored to your needs.
               </p>
-              <button className='px-8 py-4 rounded-full border border-primary bg-primary text-base font-semibold text-white'>
-                View properties
-              </button>
+              <Link href={'/PropertyListing'}>
+                <button className='px-8 py-4 rounded-full border border-primary bg-primary text-base font-semibold text-white hover:cursor-pointer'>
+                  View properties
+                </button>
+              </Link>
             </div>
             <div className='col-span-8 mobile:col-span-12 xl:col-span-6 relative group hover:grayscale-25 hover:cursor-pointer'>
               <Link href={'#'}>
