@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero: React.FC = () => {
   return (
@@ -12,10 +13,12 @@ const Hero: React.FC = () => {
               Futuristic Haven
             </h1>
             <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
-              <button className='px-8 py-4 border border-white dark:border-badge bg-white dark:bg-badge text-black dark:text-white text-base font-semibold rounded-full'>
-                Get in touch
-              </button>
-              <button className='px-8 py-4 border border-white  bg-transparent text-white text-base font-semibold rounded-full'>
+              <Link href={'/ContactUs'}>
+                <button className='px-8 py-4 border border-white dark:border-badge bg-white dark:bg-badge text-black dark:text-white text-base font-semibold rounded-full hover:cursor-pointer hover:bg-transparent hover:text-white dark:hover:border-white'>
+                  Get in touch
+                </button>
+              </Link>
+              <button className='px-8 py-4 border border-white dark:border-black  bg-transparent text-white dark:text-black text-base font-semibold rounded-full hover:cursor-pointer hover:bg-white hover:text-black'>
                 View Details
               </button>
             </div>
