@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Layout/Header'
 import { ThemeProvider } from 'next-themes'
 import Footer from '@/components/Layout/Footer'
+import NextTopLoader from 'nextjs-toploader'
 
 const bricolageGro = Bricolage_Grotesque({
   variable: '--font-bricolage-gro',
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${bricolageGro.variable} bg-white dark:bg-badge antialiased`}>
+        <NextTopLoader color='#07be8a'/>
         <ThemeProvider
           attribute='class'
           enableSystem={true}
