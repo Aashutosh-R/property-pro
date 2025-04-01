@@ -4,12 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const PropertyCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
-  const { src, name, location, rate, beds, baths, area } = item
+  const { src, slug, name, location, rate, beds, baths, area } = item
   return (
     <div>
       <div className='relative rounded-2xl border border-black/10 dark:border-white/30 group hover:shadow-lg dark:hover:shadow-white/20'>
         <div className='overflow-hidden rounded-t-2xl'>
-          <Link href={'#'}>
+          <Link href={`/PropertyDetails/${slug}`}>
             <Image
               src={src}
               alt={name}
@@ -30,7 +30,7 @@ const PropertyCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
         <div className='p-6'>
           <div className='flex flex-col mobile:flex-row gap-5 mobile:gap-0 justify-between mb-6'>
             <div>
-              <Link href={'#'}>
+              <Link href={`/PropertyDetails/${slug}`}>
                 <h3 className='text-xl font-medium text-black dark:text-white group-hover:text-primary'>
                   {name}
                 </h3>
