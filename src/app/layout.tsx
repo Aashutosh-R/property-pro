@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${bricolageGro.variable} bg-white dark:bg-badge antialiased`}>
+        className={`${bricolageGro.variable} bg-white dark:bg-badge/70 antialiased`}>
         <NextTopLoader color='#07be8a'/>
         <ThemeProvider
           attribute='class'
