@@ -4,6 +4,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property1.jpg',
     name: 'Serenity height villas',
+    slug: 'Serenity-height-villas',
     location: '15 s aurora ave, miami',
     rate: '570,000',
     beds: 4,
@@ -13,6 +14,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property2.jpg',
     name: 'Mountain retreat villa',
+    slug: 'Mountain-retreat-villa',
     location: '18 s aurora ave, miami',
     rate: '575,000',
     beds: 5,
@@ -22,6 +24,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property3.jpg',
     name: 'Modern luxe villa',
+    slug: 'Modern-luxe-villa',
     location: '20 s aurora ave, miami',
     rate: '580,000',
     beds: 3,
@@ -31,6 +34,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property4.jpg',
     name: 'Royal orchid villas',
+    slug: 'Royal-orchid-villas',
     location: '12 emerald heights, los angeles',
     rate: '590,000',
     beds: 6,
@@ -40,6 +44,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property5.jpg',
     name: 'Grand vista villas',
+    slug: 'Grand-vista-villas',
     location: '25 skyline boulevard, san diego',
     rate: '710,000',
     beds: 2,
@@ -49,6 +54,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property6.jpg',
     name: 'Imperial pearl villas',
+    slug: 'Imperial-pearl-villas',
     location: '18 sapphire bay road, naples',
     rate: '630,000',
     beds: 4,
@@ -58,6 +64,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property7.jpg',
     name: 'Opulent haven villas',
+    slug: 'Opulent-haven-villas',
     location: '22 ocean breeze drive, malibu',
     rate: '620,000',
     beds: 6,
@@ -67,6 +74,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property8.jpg',
     name: 'Elite crest villas',
+    slug: 'Elite-crest-villas',
     location: '10 palm view lane, beverly hills',
     rate: '750,000',
     beds: 4,
@@ -76,6 +84,7 @@ export const propertyHomes: PropertyHomes[] = [
   {
     src: '/images/properties/property9.jpg',
     name: 'Majestic bay villas',
+    slug: 'Majestic-bay-villas',
     location: '8 sunset cove, miami beach',
     rate: '680,000',
     beds: 4,
