@@ -21,7 +21,7 @@ const PropertyListing: React.FC = () => {
             </p>
           </div>
           <div className='text-center'>
-            <h3 className='text-40 sm:text-52 font-medium text-black dark:text-white tracking-tighter'>
+            <h3 className='text-40 sm:text-52 font-medium text-black dark:text-white tracking-tighter leading-12 mobile:my-4 my-2'>
               Discover inspiring designed homes.
             </h3>
             <p className='text-xm font-normal text-black/50 dark:text-white/50'>

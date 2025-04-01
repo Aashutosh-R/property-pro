@@ -13,7 +13,7 @@ export default function PropertyDetails() {
     <>
       <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28'>
         <div className='mb-16'>
-          <div className='flex items-center justify-between'>
+          <div className='flex lg:flex-row flex-col gap-10 lg:items-center justify-between'>
             <div>
               <div className='flex gap-2.5 items-center'>
                 <span>
@@ -29,7 +29,7 @@ export default function PropertyDetails() {
                 </p>
               </div>
               <div>
-                <h3 className='text-40 sm:text-52 font-medium text-black dark:text-white tracking-tighter'>
+                <h3 className='text-40 sm:text-52 font-medium text-black dark:text-white tracking-tighter leading-11 mobile:my-4 my-2'>
                   {item?.name}
                 </h3>
                 <div className='flex items-center gap-2.5 text-black/50 dark:text-white/50'>
@@ -67,8 +67,8 @@ export default function PropertyDetails() {
           </div>
         </div>
         <div className='mb-16'>
-          <div className='grid grid-cols-12 gap-10'>
-            <div className='col-span-8 row-span-2'>
+          <div className='grid mobile:grid-cols-12 gap-10'>
+            <div className='mobile:col-span-12 md:col-span-8 mobile:row-span-2'>
               <Image
                 src={`${item?.src}`}
                 alt={`${item?.name}`}
@@ -77,7 +77,7 @@ export default function PropertyDetails() {
                 className='rounded-2xl h-full'
               />
             </div>
-            <div className='col-span-4'>
+            <div className='mobile:col-span-4 md:col-span-4'>
               <Image
                 src={`${item?.src}`}
                 alt={`${item?.name}`}
@@ -86,29 +86,29 @@ export default function PropertyDetails() {
                 className='rounded-2xl h-full'
               />
             </div>
-            <div className='col-span-2'>
+            <div className='mobile:col-span-4 md:col-span-2'>
               <Image
                 src={`${item?.src}`}
                 alt={`${item?.name}`}
                 width={208}
                 height={200}
-                className='rounded-2xl h-full'
+                className='rounded-2xl h-full w-full'
               />
             </div>
-            <div className='col-span-2'>
+            <div className='mobile:col-span-4 md:col-span-2'>
               <Image
                 src={`${item?.src}`}
                 alt={`${item?.name}`}
                 width={208}
                 height={200}
-                className='rounded-2xl h-full'
+                className='rounded-2xl h-full w-full'
               />
             </div>
           </div>
         </div>
         <div>
-          <div className='grid grid-cols-12 gap-10'>
-            <div className='col-span-8'>
+          <div className='grid mobile:grid-cols-12 gap-10'>
+            <div className='lg:col-span-8 mobile:col-span-12 col-span-full'>
               <h5 className='text-xl font-medium text-black dark:text-white pb-10'>
                 Property details
               </h5>
@@ -208,7 +208,7 @@ export default function PropertyDetails() {
                   What this property offers
                 </h3>
                 <div className='text-base font-normal text-black dark:text-white'>
-                  <div className='grid grid-cols-3 gap-x-10 gap-y-6'>
+                  <div className='grid grid-cols-1 mobile:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-6'>
                     <div className='flex items-center gap-3'>
                       <Icon
                         icon={'solar:gallery-circle-linear'}
@@ -267,9 +267,9 @@ export default function PropertyDetails() {
                 </div>
               </div>
             </div>
-            <div className='col-span-4'>
+            <div className='lg:col-span-4 mobile:col-span-12 col-span-full'>
               <div className='bg-primary/10 p-8 rounded-2xl relative overflow-hidden mb-10'>
-                <div className='flex flex-col gap-8'>
+                <div className='flex flex-col text-center lg:text-start gap-8'>
                   <div>
                     <h4 className='text-3xl font-medium text-black dark:text-white leading-11'>
                       ${item?.rate}
@@ -294,7 +294,7 @@ export default function PropertyDetails() {
                 </div>
               </div>
               <div>
-                <div className='border border-black/10 dark:border-white/10 rounded-2xl p-10'>
+                <div className='border border-black/10 dark:border-white/10 rounded-2xl p-5 md:p-10'>
                   <div className='flex flex-col gap-5'>
                     <div>
                       <Icon
